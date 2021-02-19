@@ -117,3 +117,11 @@ print(a + b)
 a, b = input().split('-')
 print(a + b)
 ```
+### [Q1021. [기초-입출력] 단어 1개 입력받아 그대로 출력하기(설명)](https://codeup.kr/problem.php?id=1021)
+```python
+print(input())
+```
+### [Q1022. [기초-입출력] 문장 1개 입력받아 그대로 출력하기(설명)](https://codeup.kr/problem.php?id=1022)
+```python
+print(input())
+```
