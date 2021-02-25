@@ -5,7 +5,7 @@
 
 "C:\Download\'hello'.py"  
 (단, 따옴표도 함께 출력한다.)
-### A6007
+### Answer
 ```python
 print('"C:\Download\\\'hello\'.py"')
 ```
@@ -13,15 +13,43 @@ print('"C:\Download\\\'hello\'.py"')
 print("Hello\nWorld")  
 
 위 코드를 정확히 그대로 출력하시오.(공백문자 주의)
-### A6008
+### Answer
 ```python
 print('print("Hello\\nWorld")')
 ```
 
 ### [Q6019 : [기초-입출력] 연월일 입력받아 순서 바꿔 출력하기](https://codeup.kr/problem.php?id=6019)
 "연도.월.일"을 입력받아 "일-월-연도" 순서로 바꿔 출력해보자.
-### A6019
+### Answer
 ```python
 y, m, d = input().split('.')
-print(d, m, y, sep='-')
+print(d, m, y, sep='-')     #
+```
+### [Q6022 : [기초-입출력] 연월일 입력받아 나누어 출력하기(설명)](https://codeup.kr/problem.php?id=6022)
+6자리의 연월일(YYMMDD)을 입력받아 나누어 출력해보자.
+### Answer
+```python
+s = input()
+for i in range(0, 6, 2):
+    print(s[i:i+2], end=' ')    #
+```
+input
+```
+960212
+```
+output
+```
+96 02 12
+```
+### [Q6027 : [기초-출력변환] 10진 정수 입력받아 16진수로 출력하기1(설명)](https://codeup.kr/problem.php?id=6027)
+### [Q6028 : [기초-출력변환] 10진 정수 입력받아 16진수로 출력하기2(설명)](https://codeup.kr/problem.php?id=6028)
+### Answer
+```python
+print('%x'%n)   # 소문자로 출력
+print('%X'%n)   # 대문자로 출력
+```
+### [Q6029 : [기초-값변환] 16진 정수 입력받아 8진수로 출력하기(설명)](https://codeup.kr/problem.php?id=6029)
+```python
+n = int(input(), 16)    # input을 16진수로 변환
+print('%o'%n)
 ```
