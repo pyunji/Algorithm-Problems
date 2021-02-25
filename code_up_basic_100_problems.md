@@ -49,7 +49,11 @@ print('%x'%n)   # 소문자로 출력
 print('%X'%n)   # 대문자로 출력
 ```
 ### [Q6029 : [기초-값변환] 16진 정수 입력받아 8진수로 출력하기(설명)](https://codeup.kr/problem.php?id=6029)
+### Answer
 ```python
 n = int(input(), 16)    # input을 16진수로 변환
 print('%o'%n)
 ```
+### 유니코드 문자 관련 메소드
+- `ord()` : 문자 -> 정수값
+- `chr()` : 정수값 -> 문자
