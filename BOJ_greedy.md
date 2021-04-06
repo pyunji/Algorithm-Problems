@@ -30,3 +30,11 @@ S는 일반 좌석, L은 커플석을 의미하며, L은 항상 두개씩 쌍으
         - S좌석의 개수 + L좌석의 개수 / 2 + 1 은 컵홀더의 개수이다.
 - 컵홀더의 개수는 좌석의 수 N보다 많을 수도 있다.
     - 따라서 컵홀더의 개수와 좌석의 수 중 작은 값이 정답이다.
+## ❗ Q6. [한조서열정리](https://www.acmicpc.net/problem/14659)
+### [submission](https://www.acmicpc.net/source/28090605)
+- 내가 제출했던 수많은 비효율적인 코드를 확인하기
+- 내가 약한 부류의 문제임
+    - 가장 높은 값이 나올때까지 1을 더하면 되는데 투포인터로 푸는 것이 잘못되었음.
+
+## Q7. [ZOAC 2](https://www.acmicpc.net/problem/18238)
+### [submission](https://www.acmicpc.net/source/28091947)
