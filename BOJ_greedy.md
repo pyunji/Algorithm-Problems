@@ -38,3 +38,89 @@ S는 일반 좌석, L은 커플석을 의미하며, L은 항상 두개씩 쌍으
 
 ## Q7. [ZOAC 2](https://www.acmicpc.net/problem/18238)
 ### [submission](https://www.acmicpc.net/source/28091947)
+
+## Q8. [책 정리] (https://www.acmicpc.net/problem/1434)
+### [submission] (https://www.acmicpc.net/source/28126642)
+- 맨 처음엔 이렇게 풀었는데, 마지막 루프가 돌고나서 한번 더 돌게 하는 방법을 찾지 못해서 틀렸었음.
+```python
+from collections import deque
+n, m = list(map(int, input().split()))
+a = deque(list(map(int, input().split())))
+b = deque(list(map(int, input().split())))
+ans = 0
+
+box = a.popleft()
+book = b.popleft()
+# print(a, b, type(box), type(book))
+# book()
+while a or b:
+    print(a, b, box, book)
+    if box < book:
+        ans += box
+        box = a.popleft()
+    else:
+        box = box - book
+        book = b.popleft()    
+print(ans)
+```
+- `while True`, `try-except` 문을 활용하여 deque가 비어있을 경우 에러를 처리함과 동시에 남은 연산도 수행해주었음
+```python
+from collections import deque
+# n, m = list(map(int, input().split()))
+input()
+a = deque(list(map(int, input().split())))
+b = deque(list(map(int, input().split())))
+ans = 0
+
+box = a.popleft()
+book = b.popleft()
+
+try:
+    while True:
+        print(a, b, box, book)
+        if box < book:
+            ans += box
+            box = a.popleft()
+        else:
+            box = box - book
+            book = b.popleft()    
+except:
+    ans += box
+    pass
+ans += sum(a)
+ans
+```
+```
+메모리 32676kb
+시간 116ms
+```
+- deque를 import해서 실행할 시 메모리와 시간을 좀 더 잡아먹게 된다고 판단하여 그냥 list로 사용
+    - `List().pop(0)`보다 `deque().popleft()`가 빠르다고 들었는데..
+```python
+# from collections import deque
+input()
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+ans = 0
+
+box = a.pop(0)
+book = b.pop(0)
+
+try:
+    while True:
+        if box < book:
+            ans += box
+            box = a.pop(0)
+        else:
+            box = box - book
+            book = b.pop(0)
+except:
+    ans += box
+    pass
+ans += sum(a)
+print(ans)
+```
+```
+메모리 28776kb
+시간 68ms
+```
