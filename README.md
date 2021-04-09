@@ -8,3 +8,4 @@
 - BOJ #14659    [\[code\]](https://github.com/pyunji/Algorithm-Problems/blob/master/src/BOJ%2314659.py)[\[설명\]](https://dev-i.tistory.com/entry/ps-boj-14659)
 - BOJ #18238    [\[code\]](https://github.com/pyunji/Algorithm-Problems/blob/master/src/BOJ%2318238.py)[\[설명\]](https://dev-i.tistory.com/entry/ps-boj-18238)
 - BOJ #1434     [\[code\]](https://github.com/pyunji/Algorithm-Problems/blob/master/src/BOJ%231434.py)[\[설명\]](https://dev-i.tistory.com/entry/ps-boj-1434)
+- BOJ #21313     [\[code\]](https://github.com/pyunji/Algorithm-Problems/blob/master/src/BOJ%2321313.py)[\[설명\]](https://dev-i.tistory.com/entry/ps-boj-21313)
