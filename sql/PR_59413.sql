@@ -1,5 +1,4 @@
--- 코드를 입력하세요
-with recursive rowgen(h) as(
+with recursive rowgen(h) as (
     select 0
     union all
     select h + 1
@@ -8,7 +7,7 @@ with recursive rowgen(h) as(
 )
 
 select h, count(datetime)
-from rowgen
-    left join animal_outs on rowgen.h=hour(animal_outs.datetime)
-group by rowgen.h
-order by rowgen.h
+from rowgen 
+    left join animal_outs on h = HOUR(datetime)
+group by h
+order by h;
